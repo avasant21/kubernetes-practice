@@ -67,14 +67,12 @@
 3. Create the below playbook to install Docker and Kubernetes Cluster.</br>
 
         $ cat <<EOF | sudo tee /etc/ansible/roles/k8s_playbook.yml
-      ```yml
-      - hosts: k8s
-        become: true
+        - hosts: k8s
+          become: true
 
-        roles:
-          - docker
-          - kubernetes
-      ```
+          roles:
+            - docker
+            - kubernetes
         EOF
 
 4. Clone the role from `geerlingguy's` Repositories/Ansible galaxy. Install `git` if not installed with `sudo yum install git -y`.</br>
