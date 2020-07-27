@@ -62,7 +62,7 @@
         
 3. Below can be followed to verify the Ansible connection with the nodes. Hostkey verification can be done by giving `yes` when prompted.</br>
 
-        $ sudo ansible k8s -m test.ping
+        $ sudo ansible k8s -m ping
 
 3. Create the below playbook to install Docker and Kubernetes Cluster.</br>
 
